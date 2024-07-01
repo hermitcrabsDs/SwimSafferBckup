@@ -1,0 +1,20 @@
+{
+   "runtime": "nodejs18.x",
+   "version": "1.0",
+   "environment": {},
+   "secrets": ["OBJECT_ACCESS_TOKEN", "CONATCT_ACCESS_TOKEN", "ASSESSORLIST_TOKEN"],
+   "endpoints": {
+	  "createAssessmentAssoication": {
+		 "method": ["GET", "POST"],
+		 "file": "create-association.js"
+	  },
+	  "accesssorOTPVerification": {
+		 "method": ["GET", "POST"],
+		 "file": "verificationOTP.js"
+	  },
+	  "accesssorUserVerification": {
+		 "method": ["GET", "POST"],
+		 "file": "verificationUser.js"
+	  }
+   }
+}
